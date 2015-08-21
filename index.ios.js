@@ -28,7 +28,7 @@ var OrientationTest = React.createClass({
         <TouchableHighlight
           onPress={() => Orientation.lockToPortrait()}
           style={{backgroundColor: "red", borderWidth: 1, borderColor: "white", padding: 10, borderRadius: 4}}>
-          <Text style={styles.instructions}>Go</Text>
+          <Text style={styles.instructions}>Lock</Text>
         </TouchableHighlight>
       </View>
     );
