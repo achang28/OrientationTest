@@ -13,7 +13,7 @@ var {
 
 var OrientationTest = React.createClass({
   componentWillMount: function() {
-    Orientation.unlockAllOrientations();
+    Orientation.shouldRotate(1);
   },
 
   render: function() {
@@ -26,7 +26,7 @@ var OrientationTest = React.createClass({
           To get started, edit index.ios.js
         </Text>
         <TouchableHighlight
-          onPress={() => Orientation.lockToPortrait()}
+          onPress={() => Orientation.shouldRotate(0)}
           style={{backgroundColor: "red", borderWidth: 1, borderColor: "white", padding: 10, borderRadius: 4}}>
           <Text style={styles.instructions}>Go</Text>
         </TouchableHighlight>
@@ -55,3 +55,4 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('OrientationTest', () => OrientationTest);
+

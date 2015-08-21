@@ -57,37 +57,37 @@
   return YES;
 }
 
-// - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-//   NSUInteger orientations;
+ - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+   NSUInteger orientations;
   
-//   orientations = UIInterfaceOrientationMaskPortrait;
+   orientations = UIInterfaceOrientationMaskPortrait;
   
-//   if (self.shouldRotate == YES) {
-//     orientations = UIInterfaceOrientationMaskAllButUpsideDown;
-//   }
+   if (self.shouldRotate == YES) {
+     orientations = UIInterfaceOrientationMaskAllButUpsideDown;
+   }
   
-//   return orientations;
-// }
+   return orientations;
+ }
 
-- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-
-  NSUInteger orientations;
-
-  orientations = UIInterfaceOrientationMaskAllButUpsideDown;
-
-  if (self.lockToPortrait == YES) {
-    orientations = UIInterfaceOrientationMaskPortrait;
-  }
-
-  if (self.lockToLandscape == YES) {
-    orientations = UIInterfaceOrientationMaskLandscape;
-  }
-
-  if (self.unlockAllOrientations == YES) {
-    orientations = UIInterfaceOrientationMaskAllButUpsideDown;
-  }
-
-  return orientations;
-}
+//- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+//
+//  NSUInteger orientations;
+//
+//  orientations = UIInterfaceOrientationMaskAllButUpsideDown;
+//
+//  if (self.lockToPortrait == YES) {
+//    orientations = UIInterfaceOrientationMaskPortrait;
+//  }
+//
+//  if (self.lockToLandscape == YES) {
+//    orientations = UIInterfaceOrientationMaskLandscape;
+//  }
+//
+//  if (self.unlockAllOrientations == YES) {
+//    orientations = UIInterfaceOrientationMaskAllButUpsideDown;
+//  }
+//
+//  return orientations;
+//}
 
 @end

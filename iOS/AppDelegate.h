@@ -10,10 +10,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-// @property (nonatomic) bool shouldRotate;
-@property (nonatomic) bool lockToPortrait;
-@property (nonatomic) bool lockToLandscape;
-@property (nonatomic) bool unlockAllOrientations;
+ @property (nonatomic) bool shouldRotate;
+//@property (nonatomic) bool lockToPortrait;
+//@property (nonatomic) bool lockToLandscape;
+//@property (nonatomic) bool unlockAllOrientations;
 @property (nonatomic, strong) UIWindow *window;
 
 @end
